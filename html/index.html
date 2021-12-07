@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="assignment week four">
+    <title>Assignment week 4</title>
+  </head>
+  <body> 
+    <header> 
+      <h1 tabindex="0">Make Huge Moves </h1>
+      <nav id="languages" role="tablist" tabindex="0" aria-label="Select language">Language 
+        <button id="btn_language_1" role="tab" aria-selected="true" aria-label="Spanish language">Es </button>
+        <button id="btn_language_2" role="tab" aria-selected="false" aria-label="English language">En</button><br>
+      </nav>
+      <nav role="tablist" tabindex="0" aria-label="Select currency">Currency 
+        <button role="tab" data-tab="panel-1" aria-label="Dolar">USD </button>
+        <button role="tab" data-tab="panel-1" aria-label="Peso Colombiano">COP  </button><br>
+      </nav>
+    </header>
+    <main aria-label="Logo"><a href="https://sites.google.com/hugeinc.com/intra" target="_blank" rel="noreferrer"><img src="../images/huge-llc-vector-logo.png" alt="logo-huge" width="300" height="167"></a>
+      <nav role="tablist" aria-label="menu">
+        <button role="tab" aria-label="program">Program </button>
+        <button role="tab" aria-label="tech">Tech </button>
+        <button role="tab" aria-label="talent">Talent</button><br>
+      </nav>
+    </main>
+    <article> 
+      <h2>Hello!</h2>
+      <section aria-label="banner huge"><img src="../images/banner-huge.jpeg" alt="banner-huge" tabindex="0" aria-label="banner huge"></section>
+      <section aria-label="content">
+        <div role="tablist">           
+          <h3 tabindex="0" role="tab">Program </h3><img src="../images/program-huge.jpeg" alt="program image" width="300" height="225" tabindex="0" role="tab">
+          <h3 tabindex="0" role="tab">Tech</h3><img src="../images/tech-huge.jpeg" alt="tech image" width="300" height="300" tabindex="0" role="tab">
+          <h3 tabindex="0" role="tab">Talent </h3><img src="../images/talent-huge.jpeg" alt="Talent image" width="300" height="254" tabindex="0" role="tab"><br>
+        </div>
+      </section>
+      <section aria-label="Contac Us">
+        <h4 tabindex="0">Contact Us  </h4>
+        <form method="GET" autocomplete="off" autofocus>
+          <div> 
+            <label for="name" tabindex="0">Nombre  </label>
+            <input id="name" name="name" type="text" placeholder="Name">
+          </div><br>
+          <div>
+            <label for="last-name" tabindex="0">Apellido</label>
+            <input id="last-name" name="last-name" type="text" placeholder="Last Name">
+          </div><br>
+          <div>
+            <label for="email" tabindex="0">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="e-mail" required>
+          </div><br>
+          <div>
+            <label for="message" tabindex="0">Mensaje </label>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="write your message here"> </textarea>
+          </div><br>
+          <button type="submit">Send</button><br>
+        </form>
+      </section>
+    </article>
+    <footer tabindex="0">Powered by the M1 talent program at HUGE.</footer>
+  </body>
+</html>
