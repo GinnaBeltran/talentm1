@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'HugeGothic-Bold';
+    src: url(../fonts/HugeGothic-Bold.ttf);
+    font-size: normal;
+    font-weight: 200;
+}
+
+.header{
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.header__title{
+    font-size: 20px;
+    font-family: 'HugeGothic-Bold';
+}
+
+.header__nav {
+    font-size: smaller;
+}
+
+.header__list{
+    list-style: none;
+    display: flex; 
+    width: 100px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+.header__list-item{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.header__list-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.main__image{
+    display: block;
+}
+
+.main__image-desktop{
+    display: none;
+}
+
+.main__list {
+    display:  flex;
+    list-style: none;
+    font-family: 'HugeGothic-Bold';
+    font-size: smaller;
+    
+}
+
+.main__list-item{
+    margin-left: 50px;
+   
+}
+
+.main__list-link{
+    text-decoration: none;
+    color: black;
+}
+
+.article__banner-image{
+    display: block;
+}
+
+.article__banner-image-tablet{
+    display: none;
+}
+
+.article__banner-image-desktop{
+    display: none;
+}
+
+
+.content{
+    flex-basis: 100%;
+}
+
+.content__article-title{
+    font-size: 20px;
+    font-family: 'HugeGothic-Bold';
+}
+
+.content__article-image{
+    display: block;
+}
+.content__article-image-tablet1 {
+    display: none;
+}
+
+.content__article-image-tablet2 {
+    display: none;
+}
+
+.content__article-image-tablet3 {
+    display: none;
+}
+
+.content__article-image-desktop1{
+    display:none ;
+}
+
+.content__article-image-desktop2{
+    display:none ;
+}
+.content__article-image-desktop3{
+    display:none ;
+}
+
+.form__title{
+    font-family: 'HugeGothic-Bold';
+    font-size: smaller;
+
+}
+
+.form {
+    display: grid;
+    grid-gap: 15px;
+}
+.form__container-name {
+    display: grid;
+    grid-template: 30px / 100px 263px;
+    grid-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form__container-message{
+    display: grid;
+    grid-template-rows: 30px 100px;
+    grid-template-columns: 375px;
+    margin-bottom: 15px;
+}
+
+.form__btn{
+    display: grid;
+    grid-column-start: 4;
+    position:absolute;
+    right: 4%;
+    background-color: rgba(246,23,142,1);
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-color: black;
+    width: 100%;
+}
+
+.footer__text{
+    color: white;
+    font-size: smaller;
+}
+
+/*-----------------------TABLET--------------------*/
+
+@media (min-width: 768px){
+
+    .header{
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .header__title{
+        font-size: 25px;
+    }
+
+    .header__container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__nav {
+        font-size: 15px;
+    }
+
+    .main{
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__list {
+        font-size: 20px;
+        
+    }
+
+    .article__banner-image{
+        display: none;
+    }
+
+    .article__banner-image-tablet{
+        width: 768px;
+        height: 350px;
+        background: url('../images/banner-huge-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .content__article-image{
+        display: none;
+    }
+
+    .content__article-image-tablet1{
+        width: 768px;
+        height: 500px;
+        background: url(../images/program-huge-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .content__article-image-tablet2{
+        width: 768px;
+        height: 500px;
+        background: url(../images/tech-huge-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .content__article-image-tablet3{
+        width: 768px;
+        height: 500px;
+        background: url(../images/talent-huge-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .form__title{
+        font-size: 15px;
+    }
+    
+    .form__container{
+        display: grid;
+    }
+    
+    .form__container-message{
+        display: grid;
+        grid-template-rows: 30px 90px;
+        grid-template-columns: 350px;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    
+    .form__btn{
+        display: grid;
+        grid-column-start: 2;
+        right: 2.2%;
+
+    }
+
+}
+
+/*-----------------------DESKTOP--------------------*/
+
+
+@media (min-width: 1024px){
+
+    
+    .header{
+        width: 100%;
+        right: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .header__title{
+        font-size: 25px;
+    }
+
+    .header__container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__nav {
+        font-size: 15px;
+    }
+
+    .main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+     
+    .main__image {
+        display: none;
+    }
+
+    .main__image-desktop{
+        display: block;
+    }
+
+    .main__list {
+        font-size: 20px;
+    }
+
+    .main__list-item{
+        margin-right: 20px;
+    }
+
+    .article__banner-image-tablet{
+        display: none;
+    }
+
+    .article__banner-image-desktop{
+        width: 1600px;
+        height: 800px;
+        background: url('../images/banner-huge-desktop.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .content__article {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-content: center;
+        align-items: center;
+    }
+
+
+    .content__article-image-tablet1{
+        display: none;
+    }
+
+    .content__article-image-tablet2{
+        display: none;
+    }
+
+    .content__article-image-tablet3{
+        display: none;
+    }
+
+    .content__article-image-desktop1{
+        width: 350px;
+        height: 250px;
+        background: url(../images/program-huge-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .content__article-image-desktop2{
+        width: 350px;
+        height: 250px;
+        background: url(../images/tech-huge-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .content__article-image-desktop3{
+        width: 350px;
+        height: 250px;
+        background: url(../images/talent-huge-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .form{
+        justify-content:center;
+        margin-top: 40px;
+
+    }
+
+    .form__title{
+        font-size: 20px;
+    }
+    
+    .form__container{
+        display: grid;
+        grid-template-columns: 2; 
+    }
+    
+    .form__container-name {
+        display: grid;
+    }
+
+    .form__container-message{
+        display: grid;
+        grid-template-rows: 30px 90px;
+        grid-template-columns: 500px;
+        margin-left: 15px;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    
+    .form__btn{
+        position: relative;
+    }
+
+}
