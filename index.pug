@@ -5,77 +5,102 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="description" content="assignment week four")
+        link(rel="stylesheet" type="text/css" href="style.css")
         title Assignment week 4
 
     body 
-        header 
-            h1(tabindex="0") Make Huge Moves 
-            nav(id="languages", role="tablist", tabindex="0" aria-label="Select language") Language 
-                button(id="btn_language_1", role="tab" , aria-selected="true", aria-label="Spanish language") Es 
+        header(class="header" role="banner")
+            h1(class="header__title" tabindex="0") Make Huge Moves 
+            div(class="header__container")
+                nav(class="header__nav" tabindex="0" aria-label="Select language") 
+                    ul(class="header__list" role="list" aria-label="language") Language
+                        li(class="header__list-item" id="btn_language_1", role="listitem", aria-label="Spanish language") 
+                            a(class="header__list-link" href="#" aria-label="Spanish") Es 
+                        li(class="header__list-item" id="btn_language_2", role="listitem", aria-label="English language") 
+                            a(class="header__list-link" href="#" aria-label="English") En
+                        br 
 
-                button(id="btn_language_2", role="tab" aria-selected="false", aria-label="English language") En
-                br 
+                nav(class="header__nav" tabindex="0" aria-label="Select currency") 
+                    ul(class="header__list" role="list"  aria-label="currency")  Currency 
+                        li(class="header__list-item" role="listitem", aria-label="Dolar") 
+                            a(class="header__list-link" href="#" aria-label="Dolar") USD 
+                        li(class="header__list-item" role="listitem", aria-label="Peso Colombiano") 
+                            a(class="header__list-link" href="#" aria-label="Peso Colombiano") COP  
+                            br
 
-            nav(role="tablist", tabindex="0", aria-label="Select currency") Currency 
-                button(role="tab" data-tab="panel-1", aria-label="Dolar") USD 
-                button(role="tab" data-tab="panel-1", aria-label="Peso Colombiano") COP  
-                br
+        main(class="main" aria-label="Logo")
+            a(href="https://sites.google.com/hugeinc.com/intra" target="_blank" rel="noreferrer") 
+                img(class="main__image" src="../images/Huge-H-Black.jpg" alt="logo-huge" width="50" height="50")
+                img(class="main__image-desktop" src="../images/huge-llc-vector-logo-desktop.jpg" alt="logo-huge" width="200" height="111")
+        
+            nav(class="main__nav" role="navigation", aria-label="menu")
+                ul(class="main__list" role="list"  aria-label="menu")
+                    li(class="main__list-item" role="listitem", aria-label="program")
+                        a(class="main__list-link" href="#" role="button", aria-label="program") Program
 
-        main(aria-label="Logo")
-            a(href="https://sites.google.com/hugeinc.com/intra" target="_blank" rel="noreferrer")
-                img(src="../images/huge-llc-vector-logo.png" alt="logo-huge" width="300" height="167")
+                    li(class="main__list-item" role="listitem", aria-label="tech")   
+                        a(class="main__list-link" href="#" role="button", aria-label="tech") Tech 
 
-            nav(role="tablist", aria-label="menu")
-                button(role="tab", aria-label="program") Program 
-                button(role="tab", aria-label="tech") Tech 
-                button(role="tab", aria-label="talent") Talent
-                br
+                    li(class="main__list-item" role="listitem", aria-label="talent")
+                        a(class="main__list-link" href="#" role="button", aria-label="talent") Talent
+                        br
 
-        article 
-            h2 Hello!
-            section(aria-label="banner huge")
-                img(src="../images/banner-huge.jpeg", alt="banner-huge" tabindex="0", aria-label="banner huge")
+        article(class="article" role="article")
+            section(class="article__banner" aria-label="banner huge")
+                img(class="article__banner-image" src="../images/banner-huge.jpg" width="375" heigth="188", alt="banner-huge" tabindex="0", aria-label="banner huge")
+                img(class="article__banner-image-tablet" src="../images/banner-huge-tablet.jpg" width="768" heigth="350", alt="banner-huge" tabindex="0", aria-label="banner huge")
+                img(class="article__banner-image-desktop" src="../images/banner-huge-desktop.jpeg" width="1024" heigth="512", alt="banner-huge" tabindex="0", aria-label="banner huge")
 
-            section(aria-label="content")
-                div(role="tablist")            
-                    h3(tabindex="0" role="tab") Program 
+            section(class="content" aria-label="content")
+                div(class="content__article" role="article")  
+                          
+                    h2(class="content__article-title" tabindex="0") Program 
 
-                    img(src="../images/program-huge.jpeg", alt="program image" width="300" height="225" tabindex="0" role="tab")
+                    img(class="content__article-image" role="img" src="../images/program-huge.jpg", alt="program image" width="375" height="300" tabindex="0" aria-label="program")
+                    img(class="content__article-image-tablet1" src="../images/program-huge-tablet.jpg" width="768" heigth="500" alt="program" tabindex="0")
+                    img(class="content__article-image-desktop1" src="../images/program-huge-desktop.jpg" width="350" heigth="250" alt="program" tabindex="0")
 
-                    h3(tabindex="0" role="tab") Tech
+                    h2(class="content__article-title" tabindex="0") Tech
 
-                    img(src="../images/tech-huge.jpeg", alt="tech image" width="300" height="300" tabindex="0" role="tab")
+                    img(class="content__article-image" role="img" src="../images/tech-huge.jpg", alt="tech image" width="375" height="300" tabindex="0")
+                    img(class="content__article-image-tablet2" src="../images/tech-huge-tablet.jpg" width="768" heigth="500", alt="tech" tabindex="0")
+                    img(class="content__article-image-desktop2" src="../images/tech-huge-desktop.jpg" width="350" heigth="250" alt="tech" tabindex="0")
 
-                    h3(tabindex="0" role="tab") Talent 
+
+                    h2(class="content__article-title" tabindex="0") Talent 
                         
-                    img(src="../images/talent-huge.jpeg", alt="Talent image" width="300" height="254" tabindex="0" role="tab")
-                    br
+                    img(class="content__article-image" role="img" src="../images/talent-huge.jpg", alt="Talent image" width="375" height="300" tabindex="0")
+                    img(class="content__article-image-tablet3" src="../images/talent-huge-tablet.jpg" width="768" heigth="500", alt="talent" tabindex="0")
+                    img(class="content__article-image-desktop3" src="../images/talent-huge-desktop.jpg" width="350" heigth="250" alt="talent" tabindex="0")
 
-            section(aria-label="Contac Us")
-                h4(tabindex="0") Contact Us  
-                form(method="GET" autocomplete="off" autofocus)
-                    div 
-                        label(for="name" tabindex="0") Nombre  
-                        input(id="name" name="name" type="text" placeholder="Name")
-                    br
+                    
 
-                    div
-                        label(for="last-name" tabindex="0") Apellido
-                        input(id="last-name" name="last-name" type="text" placeholder="Last Name")
-                    br
-                    div
-                        label(for="email" tabindex="0") E-mail
-                        input(id="email" name="email" type="email" placeholder="e-mail" required)
-                    br
-                    div
-                        label(for="message" tabindex="0") Mensaje 
-                        textarea(id="message" name="message", cols="30", rows="10" placeholder="write your message here") 
-                    br 
-                    button(type="submit") Send
-                    br
-            
+            section(class="form" aria-label="Contac Us")
+                h3(class="form__title" tabindex="0") Contact Us  
+                form(class="form__container" method="GET" autocomplete="off" autofocus)
+                    div(class="from__container-text")
+                        div(class="form__container-name")
+                            label(class="form__container-label" for="name" tabindex="0") Nombre  
+                            input(class="form__container-input" id="name" name="name" type="text" placeholder="Name")
+
+                        div(class="form__container-name")
+                            label(class="form__container-label" for="last-name" tabindex="0") Apellido
+                            input(class="form__container-input" id="last-name" name="last-name" type="text" placeholder="Last Name")
+                
+                        div(class="form__container-name")
+                            label(class="form__container-label" for="email" tabindex="0") E-mail
+                            input(class="form__container-input" id="email" name="email" type="email" placeholder="e-mail" required)
+                        
+                    div(class="form__container-message")
+                        label(class="form__container-label" for="message" tabindex="0") Mensaje 
+                        textarea(class="form__container-input" id="message" name="message", cols="30", rows="10" placeholder="write your message here") 
                    
-        footer(tabindex="0") Powered by the M1 talent program at HUGE.
+                    div(class="form__container-btn")
+                        button(class="form__btn" type="submit") Send
+                    
+                   
+        footer(class="footer" tabindex="0") 
+            p(class="footer__text") Powered by the M1 talent program at HUGE.
     
 
 
